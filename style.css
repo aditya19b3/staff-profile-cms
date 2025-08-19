@@ -217,3 +217,21 @@ button:hover{filter:brightness(.95)}
   box-shadow:0 10px 30px rgba(0,0,0,.08);
   position:relative;   /* needed for fixed logo */
 }
+
+.card-title {
+  display: flex;              /* keep icon + text in a row */
+  align-items: center;        /* vertically align them */
+  gap: 8px;                   /* space between icon and text */
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 12px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.card-title img.icon {
+  width: 28px;                /* keep icon size consistent */
+  height: 28px;
+  object-fit: contain;        /* no stretching */
+  flex-shrink: 0;             /* prevent shrinking */
+}
